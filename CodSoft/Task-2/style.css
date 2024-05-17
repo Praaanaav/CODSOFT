@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #262626;
+  padding: 8px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  padding-right: 15px;
+  gap: 32px;
+  right: 0;
+  position: fixed;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+}
+
+a:hover {
+  background-color: rgb(22, 22, 94);
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.logo {
+  color: white;
+  font-size: 32px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 700px;
+}
+
+.orderbtn {
+  border: none;
+  background-color: rgb(22, 22, 94);
+  margin-top: 24px;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 16px 32px;
+}
+
+.orderbtn:hover {
+  background-color: rgb(94, 158, 61);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 275px 200px;
+  color: #fff;
+}
+
+.home > h1 {
+  font-size: 95px;
+}
+
+.home > h3 {
+  padding-bottom: 20px;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(https://wallpaperaccess.com/full/4622450.jpg);
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.overlay {
+  background: rgb(0, 0, 0, -5);
+}
+
+.menutitle {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #373333;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.menutitle > h3 {
+  letter-spacing: 6px;
+  font-size: 22px;
+  font-weight: 600px;
+}
+
+.menugrid {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px 40px;
+  background: rgb(245, 242, 242);
+  min-height: 100vh;
+}
+
+.card {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.8);
+  margin: 50px 20px;
+}
+
+.card > img {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  border-radius: 15px 15px 0 0;
+}
+
+.mdetails {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+
+.details {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.details > h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.price {
+  text-align: right;
+}
+
+.card > p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 25px;
+  align-self: flex-start;
+}
+
+.card:hover {
+  background-color: #595959;
+  color: white;
+  cursor: default;
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.menubtn {
+  border: none;
+  background-color: rgb(22, 22, 94);
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 16px 32px;
+}
+
+.menubtn:hover {
+  background-color: rgb(94, 158, 61);
+}
+
+.learnmore {
+  border: none;
+  background-color: rgb(22, 22, 94);
+  margin-top: 24px;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 11px 20px;
+}
+
+.learnmore:hover {
+  background-color: rgb(94, 158, 61);
+}
+
+.title {
+  color: #373333;
+  text-align: center;
+}
+
+.about {
+  padding: 85px 0;
+}
+.amain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+.aleft,
+.aright {
+  flex: 1;
+}
+
+.aright > img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: fill;
+  margin: auto;
+  display: flex;
+}
+
+.order {
+  background: rgb(245, 242, 242);
+  color: white;
+  min-height: 100vh;
+}
+
+.ordertitle {
+  color: #373333;
+  text-align: center;
+  padding: 50px 0 30px 0;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 450px;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgb(213, 212, 210);
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.ip {
+  width: 350px;
+  height: 37px;
+  margin: 25px 45px 0 45px;
+  padding: 0 10px;
+  border-radius: 14px;
+  border: 1px solid #777;
+  outline: none;
+}
+
+.np {
+  width: 350px;
+  height: 170px;
+  margin: 25px 45px 0 45px;
+  padding: 0 10px;
+  border-radius: 14px;
+  border: 1px solid #777;
+  outline: none;
+}
+
+.lastbtn {
+  padding: 10px 42px 18px;
+}
+.ordernow {
+  border: none;
+  background-color: rgb(22, 22, 94);
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 10px 22px;
+}
+
+.ordernow:hover {
+  background-color: rgb(94, 158, 61);
+}
+
+footer {
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  padding: 24px;
+}
